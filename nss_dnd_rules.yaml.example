@@ -1,0 +1,25 @@
+
+rules:
+  #  static mapping
+  - type: static
+    pattern: open.dev.local
+    options:
+      target: "127.0.0.1"
+
+  #  static mapping
+  - type: static
+    pattern: "*.dev.local"
+    options:
+      target: "127.0.0.24"
+
+  #  http api mapping
+  - type: api
+    pattern: jost.local
+    options:
+      endpoint: "https://dns.local/api/lookup?host={host}"
+
+  #  cname mapping
+  - type: cname
+    pattern: "www.test.local"
+    options:
+      alias_to: "kook.dev.local"
