@@ -1,6 +1,8 @@
 nss-dnd
 =========
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  [![Go](https://github.com/bennsimon/nss-dnd/actions/workflows/go.yaml/badge.svg?branch=main)](https://github.com/bennsimon/nss-dnd/actions/workflows/go.yaml)
+
 Implementation of a nss module in Go with flexibility on host matching. It currently supports static (includes
 wildcard support), cname, and external query(api) matching.
 
